@@ -1,0 +1,11 @@
+{
+  "name": "SeneaLUI_PovSkills",
+  "description": "Brings Path of Valheiman 6.0's new UI into SeneaL UI: quiver slot and back mount, optional BowsBeforeHoes support, Halls pins, gem board and crafting windows.",
+  "version_number": "2.4.1",
+  "website_url": "",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202",
+    "seneaL-SeneaL_UI-1.2.8",
+    "treextr-PathOfValheiman-6.0.0"
+  ]
+}

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SeneaLUI.PovSkills</AssemblyName>
+    <LangVersion>7.3</LangVersion>
+    <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+  </PropertyGroup>
+  <!-- Copies of the game/BepInEx/SeneaL DLLs live in ../lib (git-ignored); originals are never touched.
+       Path of Valheiman is reached by reflection only, so it is not referenced. -->
+  <ItemGroup>
+    <Reference Include="..\lib\BepInEx.dll" Private="false" />
+    <Reference Include="..\lib\0Harmony.dll" Private="false" />
+    <Reference Include="..\lib\assembly_valheim.dll" Private="false" />
+    <Reference Include="..\lib\assembly_guiutils.dll" Private="false" />
+    <Reference Include="..\lib\assembly_utils.dll" Private="false" />
+    <Reference Include="..\lib\UnityEngine.dll" Private="false" />
+    <Reference Include="..\lib\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="..\lib\UnityEngine.UI.dll" Private="false" />
+    <Reference Include="..\lib\SeneaL-UI.dll" Private="false" />
+    <Reference Include="..\lib\Unity.TextMeshPro.dll" Private="false" />
+    <Reference Include="..\lib\UnityEngine.InputLegacyModule.dll" Private="false" />
+    <Reference Include="..\lib\UnityEngine.UIModule.dll" Private="false" />
+    <!-- 240 MB, so referenced in place rather than copied into lib. -->
+    <Reference Include="$(AppData)\com.kesomannen.gale\valheim\profiles\PoVPlus\BepInEx\plugins\PathOfValheiman\PathOfValheiman\PathOfValheiman.dll" Private="false" />
+  </ItemGroup>
+</Project>

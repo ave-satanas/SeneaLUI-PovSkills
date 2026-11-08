@@ -1,0 +1,5 @@
+# Third-party DLL copies: not redistributed
+lib/
+bin/
+obj/
+dist/
